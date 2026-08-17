@@ -155,18 +155,41 @@ Through this project, I gained practical experience in:
 
 ---
 
-# 📸 Project Evidence
+## 📸 Evidence
 
-The project evidence includes screenshots demonstrating:
+### 1. Network Scan Detection
 
-1. Kali Linux security testing
-2. Windows endpoint activity
-3. Wazuh network scan detection
-4. Windows authentication failures
-5. Wazuh brute-force detection
-6. Individual Wazuh event investigation
+A network scan was performed from Kali Linux against the Windows endpoint.
 
-Screenshots will be added to the repository as supporting evidence.
+**Kali Linux scan:**
+
+![Kali Network Scan](Screenshots/network-scan/Kali-nmap.png)
+
+**Wazuh detection:**
+
+![Wazuh Network Scan Detection](Screenshots/network-scan/Wazuh-event-dashboard.png)
+
+The activity was detected by Wazuh as a possible network scan and mapped to MITRE ATT&CK Network Service Discovery (T1046).
+
+---
+
+### 2. Windows Brute-Force Detection
+
+Multiple failed Windows authentication attempts were generated in the controlled lab environment.
+
+**Kali Linux activity:**
+
+![Kali Brute Force](Screenshots/brute-force/Kali-bruteforce.png)
+
+**Wazuh brute-force alert:**
+
+![Wazuh Brute Force Dashboard](Screenshots/brute-force/Wazuh-dash.png)
+
+Wazuh correlated the repeated authentication failures and generated a higher-severity brute-force detection alert.
+
+**Event investigation:**
+
+![Brute Force Event Details](Screenshots/brute-force/Wazh-Event-Brute.png)
 
 ---
 
